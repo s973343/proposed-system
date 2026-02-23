@@ -1,0 +1,46 @@
+name: vision
+
+channels:
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+
+  - pip:
+      # Core AI & Embeddings
+      - torch
+      - torchvision
+      - transformers
+
+      # Vector Database
+      - chromadb
+
+      # Video & Image Processing
+      - opencv-python
+      - Pillow
+      - av
+      - ffmpeg-python
+      - scenedetect
+
+      # Audio
+      - librosa
+      - openai-whisper
+
+      # Google Gemini API
+      - google-genai
+
+      # LLM APIs
+      - openai
+      - groq
+
+      # Data & Utilities
+      - numpy
+      - pandas
+      - openpyxl
+      - python-dotenv
+      - datasets
+      - ipython
+      - yt-dlp
+      # CLIP
+      - git+https://github.com/openai/CLIP.git
